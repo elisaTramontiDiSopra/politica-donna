@@ -1,0 +1,112 @@
+@import ~style/variables
+@import ~style/bootstrap
+@import ~ladda/dist/ladda.min.css
+
+
+// @ import '~ngx-toastr/toastr.css'
+
+html
+  font-size: 16px !important
+  height: 100%
+  @include media-breakpoint-down(sm)
+    font-size: 14px !important
+  @include media-breakpoint-down(xs)
+    font-size: 12px !important
+  body
+    background-color: $bg
+    color: $white
+    height: 100%
+    font-family: 'Raleway', sans-serif
+    font-weight: 400
+    .container, .container-no-gutters
+      height: 100%
+//buttons
+button
+  border: none
+.pointer
+  cursor: pointer
+
+//rotations
+.rotate90
+  transform: rotate(90deg)
+.rotate270
+
+//skew
+.skew-left
+  transform: skewY(-6deg)
+.unskew-left
+  transform: skewY(6deg)
+.skew-right
+  transform: skewY(6deg)
+.unskew-right
+  transform: skewY(-6deg)
+
+//z-indexes
+.z-1
+  //z-index: 9
+.z-2
+  //z-index: 8
+
+//alignment
+.page-centered
+  width: 95%
+  margin: auto
+
+//overflow
+.overflow-scroll
+  overflow: scroll
+  max-height: 500px
+::-webkit-scrollbar
+  display: none
+.overflow-hidden
+  overflow: hidden
+
+//bg
+.bg-transparent
+  background-color: transparent
+
+//section
+.section
+  color: $white
+  .overflow-hidden
+
+//typography
+h1
+  font-size:  7rem
+  text-transform: uppercase
+  font-family: 'Raleway', sans-serif
+  font-weight: 600
+  line-height: 8rem
+h2
+  letter-spacing: 2px
+  font-size: 5.5rem
+  text-transform: uppercase
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+h3
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+  font-size: 2rem
+  //line-height: 2rem
+h5
+  //font-weight: bold
+  color: #fff
+button
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+
+//text features
+.text-size-2
+  font-size: 2rem
+.text-size-3
+  font-size: 3rem
+.text-size-4
+  font-size: 4rem
+.text-size-5
+  font-size: 5rem
+.line-height-05
+  line-height: 0.5rem
+.line-height-1
+  line-height: 1rem
+.line-height-2
+  line-height: 2rem
