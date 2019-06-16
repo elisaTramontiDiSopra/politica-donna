@@ -29,6 +29,7 @@ import { TownGridComponent } from './components/town-grid/town-grid.component';
 
 // SERVICES
 import { LoadingService } from './services/loading.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { LoadingService } from './services/loading.service';
   providers: [
     AuthService,
     LoadingService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    ApiService,
   ],
   bootstrap: [AppComponent]
 })
